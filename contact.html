@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <section class="sub-header">
+   <nav>
+       <a href="my folder"> <img src=""></a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" id="fa" onclick="hidemenu()"></i>
+           <ul>
+           <li><a href="project0.html"> HOME</a></li>
+           <li><a href="About Us.html">ABOUT </a></li>
+           <li><a href="course.html"> COURSE</a></li>
+           <li><a href="blog.html">BLOG </a></li>
+           <li><a href="contact.html"> CONTACT</a></li>
+           </ul>
+       </div>
+       <i class="fa fa-bars" id="fa" onclick="showmenu()"></i>
+   </nav>
+  <h1>Contact Us</h1>
+  </section> 
+<!-------contact us---------->
+ <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.567739027316!2d78.4424685!3d17.3929687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66ee17dc9ef96222!2sPriyanka%20Junior%20College%20For%20Girls!5e0!3m2!1sen!2sin!4v1644756693480!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+ </section>
+ <section class="contact-us">
+     <div class="row">
+         <div class="contact-col">
+             <div>
+             <i class="fas fa-home" id="Fa"></i>
+            <span>
+                <h5>Vardha Complex, Amba Theatre Road, 12-2-831/A, Gudi Malkapur Rd,</h5>
+                <p>Opposite Bus Depot, Mehdipatnam, Hyderabad, 500028.
+                </p>
+            </span>
+         </div>
+         <div>
+            <i class="fa-brands fas fa-phone" id="Fa"></i>
+            <span>
+                <h5>040-2353 3190</h5>
+                <p>Monday to Saturday,9AM to 5PM
+                </p>
+            </span>
+         </div>
+         <div>
+            <i class="fas fa-envelope-open" id="Fa"></i>
+            <span>
+                <h5> info@priyanka.edu</h5>
+                <p>Email us your query
+                </p>
+            </span>
+         </div>
+         </div>
+         <div class="contact-col">
+           <form action="form handler.php" method="post">
+               <input type="text" name="name" placeholder="Enter your name" required>
+               <input type="email"   name="email" placeholder="Enter email address" required>
+               <input type="text"  name="subject"  placeholder="Enter your subject" required>
+               <textarea rows="8"  name="message"  placeholder="message" required></textarea>
+               <button type="submit" class="hero-button red-btn"> Send Message</button>
+           </form> 
+        </div>
+     </div>
+ </section>
+  
+  
+  <!-------footer-------->
+
+  <section class="Footer">
+      <h4>About Us</h4>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deleniti repellendus sequi at <br>distinctio dignissimos qui laudantium obcaecati consequuntur accusamus!</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook" id="Fa"></i>
+        <i class="fa-brands fa-twitter"  id="Fa"></i>
+        <i class="fa-brands fa-instagram" id="Fa"></i>
+        <i class="fa-brands fa-linkedin-in" id="Fa"></i>
+      </div>
+      <p>Made With <i class="fa fa-heart" id="ha"></i>by Bhavani</p>
+  </section>
+
+ 
+   <!-------javascript-------->
+  <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu(){
+          navLinks.style.right="0";
+      }
+      function hidemenu(){
+          navLinks.style.right="-200px";
+      }
+  </script>
+</body>
+</html>
